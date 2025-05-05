@@ -1,4 +1,4 @@
-// Fetch a random quote from ZenQuotes API
+
 fetch("https://zenquotes.io/api/random")
   .then((res) => res.json())
   .then((data) => {
@@ -11,7 +11,7 @@ fetch("https://zenquotes.io/api/random")
     document.getElementById("quoteText").innerHTML = "Could not fetch a quote at this time.";
   });
 
-// Voice command functionality
+ 
 function startListening() {
   if (annyang) {
     const commands = {

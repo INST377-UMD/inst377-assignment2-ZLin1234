@@ -36,7 +36,7 @@ h1 {
     padding: 20px;
 }
 
-/* Carousel styling */
+ 
 .carousel-container {
     position: relative;
     max-width: 800px;
@@ -58,7 +58,7 @@ h1 {
     object-fit: cover;
 }
 
-/* Dog breed buttons */
+ 
 .breed-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -116,7 +116,7 @@ h1 {
     background-color: #ffc5d3;
 }
 
-/* Breed info container */
+ 
 .breed-info-container {
     background-color: white;
     border-radius: 10px;

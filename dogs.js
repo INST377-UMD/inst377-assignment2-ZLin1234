@@ -162,7 +162,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     setupSpeechRecognition();
 });
 
-// Voice command functionality
+
 
 function loadBreedByName(breedName) {
     fetch(`https://api.thedogapi.com/v1/breeds/search?q=${breedName}`)

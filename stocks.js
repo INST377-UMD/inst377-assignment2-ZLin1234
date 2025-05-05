@@ -65,7 +65,7 @@ document.getElementById('lookup-button').addEventListener('click', async () => {
   }
 });
 
-// === Reddit Trending Stocks ===
+// Reddit Trending Stocks 
 fetch('https://tradestie.com/api/v1/apps/reddit?date=2022-04-03')
   .then(res => res.json())
   .then(data => {
@@ -85,7 +85,6 @@ fetch('https://tradestie.com/api/v1/apps/reddit?date=2022-04-03')
     });
   });
 
-// === Voice Command Integration ===
 function startListening() {
     if (annyang) {
       const commands = {
@@ -104,7 +103,7 @@ function startListening() {
           document.getElementById('ticker').value = upperTicker;
           document.getElementById('day-range').value = 30;
   
-          // 自动触发查询
+          
           document.getElementById('lookup-button').click();
         }
       };
