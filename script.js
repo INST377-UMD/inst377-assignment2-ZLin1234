@@ -20,8 +20,17 @@ function startListening() {
         document.body.style.backgroundColor = color;
       },
       "navigate to *page": (page) => {
-        window.location.href = page.toLowerCase() + ".html";
-      }
+        const target = page.toLowerCase().trim();
+        if (target.includes("home")) {
+          window.location.href = "A2.html";
+        } else if (target.includes("dogs")) {
+          window.location.href = "dogs.html";
+        } else if (target.includes("stocks")) {
+          window.location.href = "stocks.html";
+        } else {
+          alert("Page not found: " + page);
+        }
+      },
     };
 
     annyang.addCommands(commands);
