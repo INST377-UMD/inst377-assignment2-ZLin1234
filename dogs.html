@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.1/simpleslider.min.js"></script>
+    <link rel="stylesheet" href="dogs.css">
+</head>
+<body>
+    <header>
+        <h1>INST377 - Activities</h1>
+        <nav>
+          <a href="A2.html">Home</a>
+          <a href="stocks.html">Stocks</a>
+          <a href="dogs.html">Dogs</a>
+        </nav>
+      </header>
+    
+    <div class="container">
+        <h2>Dog Image Carousel</h2>
+        <div class="carousel-container">
+            <div class="carousel" id="dogCarousel">
+                <!-- Dog images will be loaded here -->
+                <img src="/api/placeholder/800/400" alt="Dog image loading...">
+            </div>
+        </div>
+        
+        <h2>Dog Breeds</h2>
+        <div class="breed-buttons" id="breedButtons">
+            <div class="loading">Loading dog breeds...</div>
+        </div>
+        
+        <div class="breed-info-container" id="breedInfo">
+            <div id="breed-info" style="display: none;">
+                <h3 id="breed-name">Breed Name</h3>
+                <p><strong>Description:</strong> <span id="breed-description"></span></p>
+                <p><strong>Life Span:</strong> <span id="breed-lifespan"></span></p>
+              </div>
+              
+            <!-- Breed information will be displayed here -->
+        </div>
+        
+        <section class="audio-section">
+            <h2>In this web page there are options to Navigate using Audio!</h2>
+            <p>Ensure your Mic is enabled to be able to use this feature</p>
+            <ul>
+    
+              <li><strong>Load Dog Breed</strong>
+                <ul><li>Say: Load Dog Breed &lt;Dog Breed Name&gt;</li></ul>
+              </li>
+    
+              <li><strong>Navigate to a Different Page</strong>
+                <ul><li>Say: Navigate to &lt;page&gt;</li></ul>
+              </li>
+    
+              <li><strong>Change the Page Color</strong>
+                <ul><li>Say: Change the color to &lt;color&gt;</li></ul>
+              </li>
+    
+              <li><strong>Say Hello Back to you!</strong>
+                <ul><li>Say: Hello</li></ul>
+              </li>
+    
+            </ul>
+            <div class="audio-buttons">
+              <button onclick="startListening()">Turn On Listening</button>
+              <button onclick="stopListening()">Turn Off Listening</button>
+            </div>
+          </section>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="dogs.js"></script>
+</body>
+</html>

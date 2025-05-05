@@ -1,0 +1,36 @@
+// Fetch a random quote from ZenQuotes API
+fetch("https://zenquotes.io/api/random")
+  .then((res) => res.json())
+  .then((data) => {
+    const quote = data[0].q;
+    const author = data[0].a;
+    document.getElementById("quoteText").innerHTML = `“${quote}” — ${author}`;
+  })
+  .catch((error) => {
+    console.error("Error fetching quote:", error);
+    document.getElementById("quoteText").innerHTML = "Could not fetch a quote at this time.";
+  });
+
+// Voice command functionality
+function startListening() {
+  if (annyang) {
+    const commands = {
+      "hello": () => alert("Hello World!"),
+      "change the color to *color": (color) => {
+        document.body.style.backgroundColor = color;
+      },
+      "navigate to *page": (page) => {
+        window.location.href = page.toLowerCase() + ".html";
+      }
+    };
+
+    annyang.addCommands(commands);
+    annyang.start();
+  }
+}
+
+function stopListening() {
+  if (annyang) {
+    annyang.abort();
+  }
+}
