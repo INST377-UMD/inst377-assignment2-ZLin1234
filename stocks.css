@@ -1,0 +1,111 @@
+body {
+    background-color: #fadadd;
+    font-family: sans-serif;
+  }
+  
+  header {
+    background-color: #e2b3b7;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #f0d5d8;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 10px;
+    background-color: #f0d5d8;
+    text-align: center;
+    padding: 10px;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 50px;
+  }
+  
+#reddit-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+  }
+  
+  #reddit-table th, #reddit-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  h3 {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  
+  canvas {
+    display: block;
+    margin-top: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #ffc5d3;
+  }
+  
+  th, td {
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  th {
+    background-color: #eee;
+  }
+  
+  img {
+    max-height: 80px;
+  }
+  
+  .audio-section {
+    background-color: #ffdbe2;
+    color: rgb(0, 0, 0);
+    border: 2px solid #444;
+    padding: 20px;
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 10px;
+  }
+  
+  .audio-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .audio-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .audio-buttons button {
+    background-color: #f0e2e2;
+    border: 2px solid #444;
+    color: black;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
